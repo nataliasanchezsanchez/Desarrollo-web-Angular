@@ -23,11 +23,15 @@ import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
     CommonModule,
     FormsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    VoiceRecognitionService,
+    SpeechSynthesisService,
+  ],
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { 
-  constructor(library: FaIconLibrary) {
+/*constructor(library: FaIconLibrary) {
   
     library.addIcons(faMicrophone);
-}}
+}*/}
