@@ -1,5 +1,5 @@
 import { async,ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WelcomeAnimationComponent } from './welcome-animation.component';
 
 describe('WelcomeAnimationComponent', () => {
