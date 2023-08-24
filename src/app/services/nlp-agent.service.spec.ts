@@ -1,17 +1,16 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import {HttpClientModule} from '@angular/common/http';
+
 import { NlpAgentService } from './nlp-agent.service';
 
 describe('NlpAgentService', () => {
-  let service: NlpAgentService;
+  /*let service: NlpAgentService;*/
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(NlpAgentService);
-  });
+  beforeEach(() =>  TestBed.configureTestingModule({}));
+    
+ 
 
   it('should be created', () => {
+    const service : NlpAgentService= TestBed.get(NlpAgentService);
     expect(service).toBeTruthy();
   });
 });
